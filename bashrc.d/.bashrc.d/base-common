@@ -1,3 +1,4 @@
+#!/bin/bash
 set -o vi
 shopt -u cmdhist
 
@@ -10,3 +11,11 @@ alias grepr='grep -rn'
 alias less='less --chop-long-lines'
 alias paug='ps aux | grep'
 alias listening='netstat -a -n | grep LISTEN'
+alias vi=vim
+alias e=vim
+
+VUNDLE_INSTALLED="$HOME"/.vundle-plugins-installed
+if [ ! -f "$VUNDLE_INSTALLED" ]; then
+    vim +PluginInstall +qall
+    echo "installed" > "$VUNDLE_INSTALLED"
+fi

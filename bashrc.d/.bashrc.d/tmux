@@ -1,2 +1,3 @@
+#!/bin/bash
 alias tmuxa='tmux attach-session -t'
 alias tmuxl='tmux list-session'

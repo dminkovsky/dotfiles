@@ -1,5 +1,7 @@
+#!/bin/bash
 alias ls='ls --color=auto'
-if type dircolors 2>/dev/null; then
+
+if hash dircolors 2>/dev/null; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 

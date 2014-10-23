@@ -1,5 +1,8 @@
+#!/bin/bash
 export GIT_AUTHOR_NAME="Dmitry Minkovsky"
 export GIT_AUTHOR_EMAIL="dminkovsky@gmail.com"
+export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   . /usr/local/etc/bash_completion.d/git-completion.bash
