@@ -1,0 +1,21 @@
+export GIT_AUTHOR_NAME="Dmitry Minkovsky"
+export GIT_AUTHOR_EMAIL="dminkovsky@gmail.com"
+
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+  . /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
+alias ga='git add'
+alias gap='ga -p'
+alias gau='ga -u'
+alias gc='git commit'
+alias gcam='gc --amend --no-edit'
+alias g='git status'
+alias gd='git diff'
+alias gds='gd --stat'
+alias gdc='gd --cached'
+alias gl='git log --abbrev-commit --oneline'
+alias glg='gl --graph --oneline --abbrev'
+alias gb='git branch'
+alias gs='git show'
+alias gsb='git show-branch'

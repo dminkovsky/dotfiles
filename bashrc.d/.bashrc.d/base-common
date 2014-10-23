@@ -1,0 +1,12 @@
+set -o vi
+shopt -u cmdhist
+
+export PS1="\u@\h \[\e[32;1m\]\w\[\e[m\] \$ "
+
+alias l='ls -al'
+alias ll='l'
+alias grep='grep --color=auto'
+alias grepr='grep -rn'
+alias less='less --chop-long-lines'
+alias paug='ps aux | grep'
+alias listening='netstat -a -n | grep LISTEN'
