@@ -14,8 +14,6 @@ alias listening='netstat -a -n | grep LISTEN'
 alias vi=vim
 alias e=vim
 
-VUNDLE_INSTALLED="$HOME"/.vundle-plugins-installed
-if [ ! -f "$VUNDLE_INSTALLED" ]; then
+vim_plugins_inst() {
     vim +PluginInstall +qall
-    echo "installed" > "$VUNDLE_INSTALLED"
-fi
+}
