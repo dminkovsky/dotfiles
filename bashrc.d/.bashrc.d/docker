@@ -1,0 +1,20 @@
+#!/bin/bash
+
+alias d=docker
+alias da='d attach'
+alias dpr='d ps'
+alias dp='d ps -a'
+alias di='d images'
+alias drmi='d rmi'
+alias drm='d rm'
+
+# Remove exited containers
+drme() {
+    drm $(dp | grep Exited | awk '{print $1}')
+}
+
+# Clean; remove exited containers and dangling images
+dc() {
+    drme
+    drmi $(di -q -a --filter="dangling=true")
+}
