@@ -4,7 +4,7 @@ shopt -u cmdhist
 
 export PS1="\u@\h \[\e[32;1m\]\w\[\e[m\] \$ "
 
-alias l='ls -al'
+alias l='ls -alh'
 alias ll='l'
 alias grep='grep --color=auto'
 alias grepr='grep -rn'
