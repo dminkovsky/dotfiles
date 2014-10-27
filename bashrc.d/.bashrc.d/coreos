@@ -1,0 +1,4 @@
+#!/bin/bash
+alias flu='fleetctl list-units'
+alias fluf='fleetctl list-unit-files'
+alias etl=etcdctl
