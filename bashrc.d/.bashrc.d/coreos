@@ -1,4 +1,6 @@
 #!/bin/bash
-alias flu='fleetctl list-units'
-alias fluf='fleetctl list-unit-files'
+alias fl=fleetctl
+alias flu='fl list-units'
+alias fluf='fl list-unit-files'
+alias flm='fl list-machines'
 alias etl=etcdctl
