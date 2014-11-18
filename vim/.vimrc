@@ -21,7 +21,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'derekwyatt/vim-scala' 
 Plugin 'fatih/vim-go'
-Plugin 'Yggdroot/indentLine'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()
 filetype plugin indent on
 
