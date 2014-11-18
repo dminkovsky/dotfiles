@@ -23,6 +23,7 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'fatih/vim-go'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'sukima/xmledit'
+Plugin 'tfnico/vim-gradle'
 call vundle#end()
 filetype plugin indent on
 
