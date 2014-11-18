@@ -22,6 +22,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'derekwyatt/vim-scala' 
 Plugin 'fatih/vim-go'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'sukima/xmledit'
 call vundle#end()
 filetype plugin indent on
 
