@@ -1,0 +1,4 @@
+#!/bin/bash
+cd ~/dotfiles
+ln -sf $PWD/bashrc-coreos/.bashrc ../
+ln -sf $PWD/bashrc.d/.bashrc.d ../
