@@ -14,6 +14,8 @@ alias paug='ps aux | grep'
 alias listening='netstat -a -n | grep LISTEN'
 alias vi=vim
 alias e=vim
+alias pd='pushd'
+alias pp='popd'
 
 vim_plugins_inst() {
     vim +PluginInstall +qall
