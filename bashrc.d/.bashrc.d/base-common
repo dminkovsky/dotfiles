@@ -20,3 +20,12 @@ alias pp='popd'
 vim_plugins_inst() {
     vim +PluginInstall +qall
 }
+
+refactor() {
+    for f in $(find . -type f); do
+        if grep -q "$1" "$f"; then
+            sed -i -e "s/${1}/${2}/g" "$f"
+        fi
+        # TODO // Rename files ($1.java -> $2.java)
+    done;
+}
