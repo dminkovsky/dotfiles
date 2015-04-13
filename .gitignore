@@ -1,0 +1,3 @@
+gradle/.gradle/caches/
+gradle/.gradle/daemon/
+gradle/.gradle/native/
