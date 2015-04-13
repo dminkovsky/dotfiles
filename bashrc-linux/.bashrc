@@ -4,3 +4,4 @@
 . $HOME/.bashrc.d/git
 . $HOME/.bashrc.d/docker
 export JAVA_HOME=/usr/java/default
+alias p='ps -efww'
