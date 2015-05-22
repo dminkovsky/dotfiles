@@ -3,5 +3,5 @@
 . $HOME/.bashrc.d/tmux
 . $HOME/.bashrc.d/git
 . $HOME/.bashrc.d/docker
-export JAVA_HOME=/usr/java/default
 alias p='ps -efww'
+export JAVA_HOME=/usr/local/java
