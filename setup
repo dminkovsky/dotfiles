@@ -1,0 +1,10 @@
+export TERM=screen-256color
+sudo yum install -y tmux git stow vim nodejs npm
+cd
+mv .bashrc .bashrc~
+git clone https://github.com/dminkovsky/dotfiles.git ~/dotfiles
+curl -LO http://download.oracle.com/otn-pub/java/jdk/8u25-b17/jdk-8u25-linux-x64.rpm -H 'Cookie: oraclelicense=accept-securebackup-cookie' && sudo rpm -i jdk-8u25-linux-x64.rpm
+cd ~/dotfiles/
+git submodule update --init
+stow bashrc-linux bashrc.d vim tmux
+cd 
