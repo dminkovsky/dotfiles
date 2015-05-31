@@ -1,3 +1,5 @@
 #!/bin/bash
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+export PATH=$JAVA_HOME/bin:$PATH
