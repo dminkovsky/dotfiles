@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Wipe paths before building up from /etc/paths
 PATH=""
 # Rebuild from /etc/paths
