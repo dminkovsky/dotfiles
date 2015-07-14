@@ -11,7 +11,6 @@ alias ll='l'
 alias grep='grep --color=auto'
 alias grepr='grep -rn'
 alias less='less --chop-long-lines'
-alias paug='ps aux | grep'
 alias listening='netstat -a -n | grep LISTEN'
 alias vi=vim
 alias e=vim
@@ -29,4 +28,8 @@ refactor() {
         fi
         # TODO // Rename files ($1.java -> $2.java)
     done;
+}
+
+paug() {
+    ps aux | grep $1 | grep -v grep | grep $1
 }
