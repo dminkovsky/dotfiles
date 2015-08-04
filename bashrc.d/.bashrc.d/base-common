@@ -9,7 +9,6 @@ alias f='find'
 alias l='ls -alhtr'
 alias ll='ls -lh'
 alias grep='grep --color=auto'
-alias grepr='grep -rn'
 alias less='less --chop-long-lines'
 alias listening='netstat -a -n | grep LISTEN'
 alias vi=vim
@@ -28,6 +27,10 @@ refactor() {
         fi
         # TODO // Rename files ($1.java -> $2.java)
     done;
+}
+
+grepr() {
+    grep -rn $1 .
 }
 
 paug() {
