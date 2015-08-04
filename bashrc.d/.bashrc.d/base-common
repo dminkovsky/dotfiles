@@ -7,7 +7,7 @@ export PS1="\u@\h \[\e[32;1m\]\w\[\e[m\] \$ "
 
 alias f='find'
 alias l='ls -alhtr'
-alias ll='l'
+alias ll='ls -lh'
 alias grep='grep --color=auto'
 alias grepr='grep -rn'
 alias less='less --chop-long-lines'
