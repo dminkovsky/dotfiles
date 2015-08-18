@@ -10,7 +10,7 @@ alias f='find'
 alias l='ls -alhtr'
 alias ll='ls -lh'
 alias grep='grep --color=auto'
-alias less='less --chop-long-lines'
+alias less='less --chop-long-lines -r'
 alias listening='netstat -a -n | grep LISTEN'
 alias vi=vim
 alias e=vim
