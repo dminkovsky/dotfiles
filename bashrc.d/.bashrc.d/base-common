@@ -3,7 +3,7 @@
 set -o vi
 shopt -u cmdhist
 
-export PS1="\u@\h \[\e[32;1m\]\w\[\e[m\] \$ "
+export PS1="\[$(tput setaf 4)\]\w \\$ \[$(tput sgr0)\]"
 
 alias p='pwd'
 alias f='find'
