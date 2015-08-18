@@ -37,3 +37,7 @@ grepr() {
 paug() {
     ps aux | grep $1 | grep -v grep | grep $1
 }
+
+colors() {
+    for i in {0..255}; do printf "\x1b[38;5;${i}m color ${i}\n"; done 
+}
