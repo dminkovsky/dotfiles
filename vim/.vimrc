@@ -7,9 +7,9 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 " http://jeffkreeftmeijer.com/2010/stumbling-into-vim/
 
 set nocompatible
+filetype off
 
 " # Vundle, Vim package manager!! https://github.com/gmarik/Vundle.vim
-filetype off 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
