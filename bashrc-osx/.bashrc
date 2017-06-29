@@ -15,3 +15,4 @@ alias dm='docker-machine'
 . $HOME/.bashrc.d/base-osx
 . $HOME/.bashrc.d/tmux
 . $HOME/.bashrc.d/git
+. $HOME/.bash_gcloud
