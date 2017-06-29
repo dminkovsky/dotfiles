@@ -17,6 +17,8 @@ alias e=vim
 alias pd='pushd'
 alias pp='popd'
 
+. ~/.bashrc.d/maven_bash_completion.sh
+
 vim_plugins_inst() {
     vim +PluginInstall +qall
 }
