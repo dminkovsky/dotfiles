@@ -8,7 +8,7 @@ export PS1="\[$(tput setaf 4)\]\w \\$ \[$(tput sgr0)\]"
 alias p='pwd'
 alias f='find'
 alias l='ls -alhtr'
-alias ll='ls -lh'
+alias ll='ls -alh'
 alias grep='grep --color=auto'
 alias less='less --chop-long-lines -r'
 alias listening='netstat -a -n | grep LISTEN'
