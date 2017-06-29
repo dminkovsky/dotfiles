@@ -10,9 +10,9 @@ set nocompatible
 
 " # Vundle, Vim package manager!! https://github.com/gmarik/Vundle.vim
 filetype off 
-set rtp+=~/.vim/vundle
-call vundle#begin('~/.vim/bundle')
-Plugin 'gmarik/Vundle.vim'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
