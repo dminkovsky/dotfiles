@@ -25,4 +25,6 @@ alias gs='git show'
 alias gsb='git show-branch'
 
 git config --global color.ui true
-git config --global core.pager 'less -r'
+# https://superuser.com/a/1202694/80826
+# and https://stackoverflow.com/a/18781512/741970
+git config --global core.pager 'less -r -+F -+X'
