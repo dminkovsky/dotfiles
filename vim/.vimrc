@@ -16,6 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'w0rp/ale'
 "Plugin 'othree/html5.vim'
 "Plugin 'digitaltoad/vim-jade'
 "Plugin 'groenewege/vim-less'
@@ -27,6 +28,10 @@ Plugin 'mxw/vim-jsx'
 "Plugin 'tfnico/vim-gradle'
 call vundle#end()
 filetype plugin indent on
+
+" By default, JSX syntax highlighting and indenting will be enabled only for
+" files with the .jsx extension. If you would like JSX in .js files, add
+let g:jsx_ext_required = 0
 
 " change the mapleader from \ to ,
 let mapleader=","
@@ -143,3 +148,14 @@ map <C-k> <C-e>
 map <C-j> <C-y>
 
 set tw=60
+
+let g:ale_linters = {}
+let g:ale_linters['javascript'] = ['eslint']
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_use_local_config = 1
+let g:ale_completion_enabled = 1
+nmap <silent> <leader><F3> <Plug>(ale_previous_wrap)
+nmap <silent> <F3> <Plug>(ale_next_wrap)
+nmap <silent> <F4> :ALEFix<CR>
