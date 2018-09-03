@@ -133,6 +133,6 @@ au BufNewFile,BufRead *.less set filetype=less
 
 :nnoremap K i<CR><Esc>
 
-:set foldmethod=indent
-:set nofoldenable
-:set foldlevel=3
+set foldmethod=indent
+set foldenable
+set foldlevel=1
