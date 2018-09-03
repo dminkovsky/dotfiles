@@ -136,3 +136,8 @@ au BufNewFile,BufRead *.less set filetype=less
 set foldmethod=indent
 set foldenable
 set foldlevel=1
+
+map <C-L> 20zl " Scroll 20 characters to the right
+map <C-H> 20zh " Scroll 20 characters to the left
+map <C-k> <C-e>
+map <C-j> <C-y>
