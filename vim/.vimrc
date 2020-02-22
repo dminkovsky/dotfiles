@@ -150,3 +150,6 @@ let g:ale_completion_enabled = 1
 nmap <silent> <leader><F3> <Plug>(ale_previous_wrap)
 nmap <silent> <F3> <Plug>(ale_next_wrap)
 nmap <silent> <F4> :ALEFix<CR>
+
+set hlsearch
+:nnoremap <Leader> / :nohlsearch<CR>
