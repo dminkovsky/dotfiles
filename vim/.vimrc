@@ -17,15 +17,6 @@ Plugin 'dense-analysis/ale'
 Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-"Plugin 'othree/html5.vim'
-"Plugin 'digitaltoad/vim-jade'
-"Plugin 'groenewege/vim-less'
-"Plugin 'altercation/vim-colors-solarized'
-"Plugin 'derekwyatt/vim-scala'
-"Plugin 'fatih/vim-go'
-"Plugin 'plasticboy/vim-markdown'
-"Plugin 'sukima/xmledit'
-"Plugin 'tfnico/vim-gradle'
 call vundle#end()
 filetype plugin indent on
 
