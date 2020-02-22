@@ -13,10 +13,10 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'dense-analysis/ale'
 Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-Plugin 'w0rp/ale'
 "Plugin 'othree/html5.vim'
 "Plugin 'digitaltoad/vim-jade'
 "Plugin 'groenewege/vim-less'
