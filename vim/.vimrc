@@ -15,8 +15,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'dense-analysis/ale'
 Plugin 'tpope/vim-surround'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Plugin 'yuezk/vim-js'
+Plugin 'MaxMEllon/vim-jsx-pretty'
 call vundle#end()
 filetype plugin indent on
 
