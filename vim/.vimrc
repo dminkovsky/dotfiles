@@ -17,6 +17,7 @@ Plugin 'dense-analysis/ale'
 Plugin 'tpope/vim-surround'
 Plugin 'yuezk/vim-js'
 Plugin 'MaxMEllon/vim-jsx-pretty'
+Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -153,3 +154,10 @@ nmap <silent> <F4> :ALEFix<CR>
 
 set hlsearch
 :nnoremap <Leader> / :nohlsearch<CR>
+
+" https://github.com/ctrlpvim/ctrlp.vim
+let g:ctrlp_working_path_mode = 'r'
+
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/](\.git|node_modules|Pods)',
+    \ }
