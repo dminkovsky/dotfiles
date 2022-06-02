@@ -12,3 +12,5 @@ export PATH=$PATH:/usr/local/share/npm/bin
 
 # The rest
 . $HOME/.bashrc
+
+export PATH="${PATH}:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
