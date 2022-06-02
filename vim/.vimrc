@@ -18,6 +18,11 @@ Plugin 'tpope/vim-surround'
 Plugin 'yuezk/vim-js'
 Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'alampros/vim-styled-jsx'
+Plugin 'leafgarland/typescript-vim'
+let g:typescript_indent_disable = 1 " Use prettier, so don't use indenting
 call vundle#end()
 filetype plugin indent on
 
@@ -147,17 +152,18 @@ let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_fix_on_save = 1
 let g:ale_javascript_prettier_use_local_config = 1
+let g:ale_completion_tsserver_autoimport = 1
 let g:ale_completion_enabled = 1
 nmap <silent> <leader><F3> <Plug>(ale_previous_wrap)
 nmap <silent> <F3> <Plug>(ale_next_wrap)
 nmap <silent> <F4> :ALEFix<CR>
 
 set hlsearch
-:nnoremap <Leader> / :nohlsearch<CR>
+:nnoremap <Leader> /:nohlsearch<CR>
 
 " https://github.com/ctrlpvim/ctrlp.vim
 let g:ctrlp_working_path_mode = 'r'
 
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/](\.git|node_modules|Pods)',
+    \ 'dir':  '\v[\/](\.git|node_modules|Pods|capacitor|dist)',
     \ }
