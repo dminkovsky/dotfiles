@@ -31,6 +31,13 @@ alias gr='git rebase'
 alias gri='gr -i'
 alias grc='gr --continue'
 
+# https://stackoverflow.com/a/24665529/741970
+__git_complete gs _git_show
+__git_complete gsb _git_show_branch
+__git_complete gs _git_show
+__git_complete gss _git_show
+__git_complete gl _git_log
+
 alias list='git stash list'
 alias stash='git stash save'
 alias pop='git stash pop'
